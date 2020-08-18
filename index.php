@@ -1,7 +1,7 @@
 <?php
 
 
-// estamos en desarrollo
+// estamos en desarrollo 2 version
 // CONTROLADORES
 require_once "controladores/plantilla.controlador.php";
 require_once "controladores/usuarios.controlador.php";
