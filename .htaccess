@@ -1,0 +1,10 @@
+#ocultamos todas las carpetas del proyecto de tal forma que el usuario no podra ingresar atravez del url
+Options All -Indexes
+
+#habilitamos el rewrite amigables
+RewriteEngine On
+
+
+#regla de reescritura, toda regla se escribe dentro de una expresion regular que comienza con ^(), y dentro le indicamos los caracteres permitido en la url , luego le decimos que cuando se este enviando atravez de la ruta index con la variable get ruta que todo valor que traiga ruta se convierta en la url amigable
+#con esto ocultamos los parametros(ruta) y solo mostramos el valor del parametro($1) en la url 
+RewriteRule ^([-a-zA-Z0-9]+)$ index.php?ruta=$1
